@@ -1,0 +1,81 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = rppackdesignvcl_del.bpl rppackvcl_del.bpl rppack_del.bpl rppack.bpl \
+  OSFinancials.exe Reportman.dll reports.dll ReportMan.of4 OBAangifte2.of4 \
+  Remittance.of4 osFRepman.exe osFECommerceService.exe ECommerce.of4 \
+  Subscription.of4 RETAILPOS.of4 HORECAPOS.of3 OSCommerceImport.osc \
+  EmailInvoice.of3 EMailDll.tpd osfresource.bpl
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+Reportman.dll: viewer\Reportman.dpr
+  $(DCC)
+
+reports.dll: ..\..\sources\OSFinancials\ReportsDll\reports.dpr
+  $(DCC)
+
+ReportMan.of4: editor\ReportMan.dpr
+  $(DCC)
+
+rppackdesignvcl_del.bpl: ..\..\components\reportman\reportman\rppackdesignvcl_del.dpk
+  $(DCC)
+
+osFRepman.exe: exeedit\osFRepman.dpr
+  $(DCC)
+
+osFECommerceService.exe: ..\closedplugins\ECommerce\ServiceApp\osFECommerceService.dpr
+  $(DCC)
+
+rppackvcl_del.bpl: ..\..\components\reportman\reportman\rppackvcl_del.dpk
+  $(DCC)
+
+rppack_del.bpl: ..\..\components\reportman\reportman\rppack_del.dpk
+  $(DCC)
+
+OSFinancials.exe: ..\..\sources\OSFinancials\OSFinancials.dpr
+  $(DCC)
+
+OBAangifte2.of4: ..\closedplugins\BAPI\OBAangifte2.dpr
+  $(DCC)
+
+Remittance.of4: ..\closedplugins\newRemittance\Remittance.dpr
+  $(DCC)
+
+rppack.bpl: ..\..\components\reportman\reportman\rppack.dpk
+  $(DCC)
+
+ECommerce.of4: ..\closedplugins\ECommerce\ECommerce.dpr
+  $(DCC)
+
+Subscription.of4: ..\closedplugins\Subscriptions\Subscription.dpr
+  $(DCC)
+
+RETAILPOS.of4: ..\closedplugins\RETAILPOS\RETAILPOS.dpr
+  $(DCC)
+
+HORECAPOS.of3: ..\closedplugins\HORECAPOS\HORECAPOS.dpr
+  $(DCC)
+
+OSCommerceImport.osc: ..\OSCommercePlugin\OSCommerceImport.dpr
+  $(DCC)
+
+EmailInvoice.of3: ..\closedplugins\emailInvoice\EmailInvoice.dpr
+  $(DCC)
+
+EMailDll.tpd: ..\closedplugins\emaildll2\EMailDll.dpr
+  $(DCC)
+
+osfresource.bpl: ..\..\sources\resourcepack\osfresource.dpk
+  $(DCC)
+
+

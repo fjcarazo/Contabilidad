@@ -1,0 +1,62 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = qrBarCodedpk.bpl dxPack2D6.bpl FREEREP6.bpl PowerPdfD6.bpl \
+  LcdDisplay.bpl TcSylComp.bpl ZCore.bpl ZParseSql.bpl ZPlain.bpl ZDbc.bpl \
+  ZComponent.bpl VpRuntime.bpl v103_d60.bpl SynEdit_D6.bpl
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+
+qrBarCodedpk.bpl: BarCo\qrBarCodedpk.dpk
+  $(DCC)
+
+dxPack2D6.bpl: DxPack\Sources\dxPack2D6.dpk
+  $(DCC)
+
+FREEREP6.bpl: FreeReport\FreeReport\SOURCE\FREEREP6.dpk
+  $(DCC)
+
+PowerPdfD6.bpl: FreeReport\PowerPdf\PowerPdf\PowerPdfD6.dpk
+  $(DCC)
+
+LcdDisplay.bpl: LCD\LcdDisplay.dpk
+  $(DCC)
+
+TcSylComp.bpl: TCashComp\TcSylComp.dpk
+  $(DCC)
+
+ZCore.bpl: ZEOS\packages\delphi6\ZCore.dpk
+  $(DCC)
+
+ZParseSql.bpl: ZEOS\packages\delphi6\ZParseSql.dpk
+  $(DCC)
+
+ZPlain.bpl: ZEOS\packages\delphi6\ZPlain.dpk
+  $(DCC)
+
+ZDbc.bpl: ZEOS\packages\delphi6\ZDbc.dpk
+  $(DCC)
+
+ZComponent.bpl: ZEOS\packages\delphi6\ZComponent.dpk
+  $(DCC)
+
+VpRuntime.bpl: VisualPlanit\VpRuntime.dpk
+  $(DCC)
+
+v103_d60.bpl: VisualPlanit\v103_d60.dpk
+  $(DCC)
+
+SynEdit_D6.bpl: SynEdit\Packages\SynEdit_D6.dpk
+  $(DCC)
+
+

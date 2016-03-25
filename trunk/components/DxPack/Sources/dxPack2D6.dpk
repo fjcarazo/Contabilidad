@@ -1,0 +1,48 @@
+package dxPack2D6;
+
+{$R *.res}
+{$R 'dxWinXPBar.dcr'}
+{$R 'dxContainer.dcr'}
+{$R 'dxCore.dcr'}
+{$R 'dxButtons.dcr'}
+{$R 'dxCheckCtrls.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'dxPack2 for Delphi6'}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  designide;
+
+contains
+  dxWinXPBar in 'dxWinXPBar.pas',
+  dxContainer in 'dxContainer.pas',
+  dxCore in 'dxCore.pas',
+  dxCoreUtils in 'dxCoreUtils.pas',
+  dxPropEditors in 'dxPropEditors.pas',
+  dxRegister in 'dxRegister.pas',
+  dxButtons in 'dxButtons.pas',
+  dxCheckCtrls in 'dxCheckCtrls.pas';
+
+end.

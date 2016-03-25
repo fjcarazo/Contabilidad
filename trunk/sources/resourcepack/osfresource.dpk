@@ -1,0 +1,47 @@
+package osfresource;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS OFF}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS OFF}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $2700000}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  vclimg,
+  vcldb,
+  dbrtl,
+  dxCoreD15,
+  cxLibraryD15,
+  dxThemeD15,
+  dxGDIPlusD15,
+  cxPageControlD15,
+  cxEditorsD15,
+  cxDataD15,
+  cxExtEditorsD15,
+  cxGridD15;
+
+contains
+  UosfResources in 'UosfResources.pas' {dmOsfResource: TDataModule},
+  UDmQuantumGridDefs in '..\pluginsShared\UDmQuantumGridDefs.pas' {dmQuantumGridDefs: TDataModule};
+
+end.

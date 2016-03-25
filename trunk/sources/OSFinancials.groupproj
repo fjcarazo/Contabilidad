@@ -1,0 +1,540 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{B38C2F7C-3940-4DAD-A0CA-3BF8C1905985}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="OSFinancials\OSFinancials.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\MMPack\MultiMedia.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\Subscriptions\Subscription.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\STOCKCHECK\StockCheck.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\WoodSales\Woodsales.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\xmlAuditfile2\XMLAuditfileFinancieel2.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\RETAILPOS\RETAILPOS.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\SendPackage\SendPackage.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\sqlbrowser\SqlBrowserDll.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\QuickOrder\QuickOrder.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\RegActiva\Activa.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\RegisterPlugins\RegisterPlugins.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\regonline\RegisterOnline.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\Payroll\Payroll.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\POSPOINTS\PosPoints.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\pospole\PosDisplay.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\Postcodelookup\Postcodelookup.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\PriceAgreement\PriceAgreement.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\prometic\Promeetec.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\newRemittance\Remittance.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\officepro\OfficePro.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\osFDocImport\DocumentImport.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\osFFreeField\FreeFields.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\LOCBATSER\LocationBatchAndSerials.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\Mijnwinkel\plugin\Mijnwinkel.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\MutlyUserAgenda\MultiUserAgenda.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\ExportForWebsites\ExportForWebsites.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\handyTools\HandyTools.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\HORECAPOS\HORECAPOS.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\emailInvoice\EmailInvoice.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\emaildll2\EMailDll.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\customeronhold\CustomerOnHold.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\DYNADBREG\DYNADBREG.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\charter\Charter.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\controlerLogin\Controlerlogin.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\Bankimport\Bankimport.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\belgischeBtw\BtwBE.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\tcDrilldown\TCDrillDown.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\ECommerce\ECommerce.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\ECommerce\ServiceApp\osFECommerceService.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\XmlImportExport\FileAndXMLExportImport.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\closedplugins\MultyUser\RegMulti.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\plugins\reportman\editor\ReportMan.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="OSFinancials">
+			<MSBuild Projects="OSFinancials\OSFinancials.dproj"/>
+		</Target>
+		<Target Name="OSFinancials:Clean">
+			<MSBuild Projects="OSFinancials\OSFinancials.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="OSFinancials:Make">
+			<MSBuild Projects="OSFinancials\OSFinancials.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="MultiMedia">
+			<MSBuild Projects="..\plugins\closedplugins\MMPack\MultiMedia.dproj"/>
+		</Target>
+		<Target Name="MultiMedia:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\MMPack\MultiMedia.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="MultiMedia:Make">
+			<MSBuild Projects="..\plugins\closedplugins\MMPack\MultiMedia.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Subscription">
+			<MSBuild Projects="..\plugins\closedplugins\Subscriptions\Subscription.dproj"/>
+		</Target>
+		<Target Name="Subscription:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\Subscriptions\Subscription.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Subscription:Make">
+			<MSBuild Projects="..\plugins\closedplugins\Subscriptions\Subscription.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="StockCheck">
+			<MSBuild Projects="..\plugins\closedplugins\STOCKCHECK\StockCheck.dproj"/>
+		</Target>
+		<Target Name="StockCheck:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\STOCKCHECK\StockCheck.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="StockCheck:Make">
+			<MSBuild Projects="..\plugins\closedplugins\STOCKCHECK\StockCheck.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Woodsales">
+			<MSBuild Projects="..\plugins\closedplugins\WoodSales\Woodsales.dproj"/>
+		</Target>
+		<Target Name="Woodsales:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\WoodSales\Woodsales.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Woodsales:Make">
+			<MSBuild Projects="..\plugins\closedplugins\WoodSales\Woodsales.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="XMLAuditfileFinancieel2">
+			<MSBuild Projects="..\plugins\closedplugins\xmlAuditfile2\XMLAuditfileFinancieel2.dproj"/>
+		</Target>
+		<Target Name="XMLAuditfileFinancieel2:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\xmlAuditfile2\XMLAuditfileFinancieel2.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="XMLAuditfileFinancieel2:Make">
+			<MSBuild Projects="..\plugins\closedplugins\xmlAuditfile2\XMLAuditfileFinancieel2.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="RETAILPOS">
+			<MSBuild Projects="..\plugins\closedplugins\RETAILPOS\RETAILPOS.dproj"/>
+		</Target>
+		<Target Name="RETAILPOS:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\RETAILPOS\RETAILPOS.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="RETAILPOS:Make">
+			<MSBuild Projects="..\plugins\closedplugins\RETAILPOS\RETAILPOS.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="SendPackage">
+			<MSBuild Projects="..\plugins\closedplugins\SendPackage\SendPackage.dproj"/>
+		</Target>
+		<Target Name="SendPackage:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\SendPackage\SendPackage.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="SendPackage:Make">
+			<MSBuild Projects="..\plugins\closedplugins\SendPackage\SendPackage.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="SqlBrowserDll">
+			<MSBuild Projects="..\plugins\closedplugins\sqlbrowser\SqlBrowserDll.dproj"/>
+		</Target>
+		<Target Name="SqlBrowserDll:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\sqlbrowser\SqlBrowserDll.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="SqlBrowserDll:Make">
+			<MSBuild Projects="..\plugins\closedplugins\sqlbrowser\SqlBrowserDll.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="QuickOrder">
+			<MSBuild Projects="..\plugins\closedplugins\QuickOrder\QuickOrder.dproj"/>
+		</Target>
+		<Target Name="QuickOrder:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\QuickOrder\QuickOrder.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="QuickOrder:Make">
+			<MSBuild Projects="..\plugins\closedplugins\QuickOrder\QuickOrder.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Activa">
+			<MSBuild Projects="..\plugins\closedplugins\RegActiva\Activa.dproj"/>
+		</Target>
+		<Target Name="Activa:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\RegActiva\Activa.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Activa:Make">
+			<MSBuild Projects="..\plugins\closedplugins\RegActiva\Activa.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="RegisterPlugins">
+			<MSBuild Projects="..\plugins\closedplugins\RegisterPlugins\RegisterPlugins.dproj"/>
+		</Target>
+		<Target Name="RegisterPlugins:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\RegisterPlugins\RegisterPlugins.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="RegisterPlugins:Make">
+			<MSBuild Projects="..\plugins\closedplugins\RegisterPlugins\RegisterPlugins.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="RegisterOnline">
+			<MSBuild Projects="..\plugins\closedplugins\regonline\RegisterOnline.dproj"/>
+		</Target>
+		<Target Name="RegisterOnline:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\regonline\RegisterOnline.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="RegisterOnline:Make">
+			<MSBuild Projects="..\plugins\closedplugins\regonline\RegisterOnline.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Payroll">
+			<MSBuild Projects="..\plugins\closedplugins\Payroll\Payroll.dproj"/>
+		</Target>
+		<Target Name="Payroll:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\Payroll\Payroll.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Payroll:Make">
+			<MSBuild Projects="..\plugins\closedplugins\Payroll\Payroll.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="PosPoints">
+			<MSBuild Projects="..\plugins\closedplugins\POSPOINTS\PosPoints.dproj"/>
+		</Target>
+		<Target Name="PosPoints:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\POSPOINTS\PosPoints.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="PosPoints:Make">
+			<MSBuild Projects="..\plugins\closedplugins\POSPOINTS\PosPoints.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="PosDisplay">
+			<MSBuild Projects="..\plugins\closedplugins\pospole\PosDisplay.dproj"/>
+		</Target>
+		<Target Name="PosDisplay:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\pospole\PosDisplay.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="PosDisplay:Make">
+			<MSBuild Projects="..\plugins\closedplugins\pospole\PosDisplay.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Postcodelookup">
+			<MSBuild Projects="..\plugins\closedplugins\Postcodelookup\Postcodelookup.dproj"/>
+		</Target>
+		<Target Name="Postcodelookup:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\Postcodelookup\Postcodelookup.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Postcodelookup:Make">
+			<MSBuild Projects="..\plugins\closedplugins\Postcodelookup\Postcodelookup.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="PriceAgreement">
+			<MSBuild Projects="..\plugins\closedplugins\PriceAgreement\PriceAgreement.dproj"/>
+		</Target>
+		<Target Name="PriceAgreement:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\PriceAgreement\PriceAgreement.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="PriceAgreement:Make">
+			<MSBuild Projects="..\plugins\closedplugins\PriceAgreement\PriceAgreement.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Promeetec">
+			<MSBuild Projects="..\plugins\closedplugins\prometic\Promeetec.dproj"/>
+		</Target>
+		<Target Name="Promeetec:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\prometic\Promeetec.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Promeetec:Make">
+			<MSBuild Projects="..\plugins\closedplugins\prometic\Promeetec.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Remittance">
+			<MSBuild Projects="..\plugins\closedplugins\newRemittance\Remittance.dproj"/>
+		</Target>
+		<Target Name="Remittance:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\newRemittance\Remittance.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Remittance:Make">
+			<MSBuild Projects="..\plugins\closedplugins\newRemittance\Remittance.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="OfficePro">
+			<MSBuild Projects="..\plugins\closedplugins\officepro\OfficePro.dproj"/>
+		</Target>
+		<Target Name="OfficePro:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\officepro\OfficePro.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="OfficePro:Make">
+			<MSBuild Projects="..\plugins\closedplugins\officepro\OfficePro.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="DocumentImport">
+			<MSBuild Projects="..\plugins\closedplugins\osFDocImport\DocumentImport.dproj"/>
+		</Target>
+		<Target Name="DocumentImport:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\osFDocImport\DocumentImport.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="DocumentImport:Make">
+			<MSBuild Projects="..\plugins\closedplugins\osFDocImport\DocumentImport.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="FreeFields">
+			<MSBuild Projects="..\plugins\closedplugins\osFFreeField\FreeFields.dproj"/>
+		</Target>
+		<Target Name="FreeFields:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\osFFreeField\FreeFields.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="FreeFields:Make">
+			<MSBuild Projects="..\plugins\closedplugins\osFFreeField\FreeFields.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="LocationBatchAndSerials">
+			<MSBuild Projects="..\plugins\closedplugins\LOCBATSER\LocationBatchAndSerials.dproj"/>
+		</Target>
+		<Target Name="LocationBatchAndSerials:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\LOCBATSER\LocationBatchAndSerials.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="LocationBatchAndSerials:Make">
+			<MSBuild Projects="..\plugins\closedplugins\LOCBATSER\LocationBatchAndSerials.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Mijnwinkel">
+			<MSBuild Projects="..\plugins\closedplugins\Mijnwinkel\plugin\Mijnwinkel.dproj"/>
+		</Target>
+		<Target Name="Mijnwinkel:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\Mijnwinkel\plugin\Mijnwinkel.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Mijnwinkel:Make">
+			<MSBuild Projects="..\plugins\closedplugins\Mijnwinkel\plugin\Mijnwinkel.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="MultiUserAgenda">
+			<MSBuild Projects="..\plugins\closedplugins\MutlyUserAgenda\MultiUserAgenda.dproj"/>
+		</Target>
+		<Target Name="MultiUserAgenda:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\MutlyUserAgenda\MultiUserAgenda.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="MultiUserAgenda:Make">
+			<MSBuild Projects="..\plugins\closedplugins\MutlyUserAgenda\MultiUserAgenda.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="ExportForWebsites">
+			<MSBuild Projects="..\plugins\closedplugins\ExportForWebsites\ExportForWebsites.dproj"/>
+		</Target>
+		<Target Name="ExportForWebsites:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\ExportForWebsites\ExportForWebsites.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="ExportForWebsites:Make">
+			<MSBuild Projects="..\plugins\closedplugins\ExportForWebsites\ExportForWebsites.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="HandyTools">
+			<MSBuild Projects="..\plugins\closedplugins\handyTools\HandyTools.dproj"/>
+		</Target>
+		<Target Name="HandyTools:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\handyTools\HandyTools.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="HandyTools:Make">
+			<MSBuild Projects="..\plugins\closedplugins\handyTools\HandyTools.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="HORECAPOS">
+			<MSBuild Projects="..\plugins\closedplugins\HORECAPOS\HORECAPOS.dproj"/>
+		</Target>
+		<Target Name="HORECAPOS:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\HORECAPOS\HORECAPOS.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="HORECAPOS:Make">
+			<MSBuild Projects="..\plugins\closedplugins\HORECAPOS\HORECAPOS.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="EmailInvoice">
+			<MSBuild Projects="..\plugins\closedplugins\emailInvoice\EmailInvoice.dproj"/>
+		</Target>
+		<Target Name="EmailInvoice:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\emailInvoice\EmailInvoice.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="EmailInvoice:Make">
+			<MSBuild Projects="..\plugins\closedplugins\emailInvoice\EmailInvoice.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="EMailDll">
+			<MSBuild Projects="..\plugins\closedplugins\emaildll2\EMailDll.dproj"/>
+		</Target>
+		<Target Name="EMailDll:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\emaildll2\EMailDll.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="EMailDll:Make">
+			<MSBuild Projects="..\plugins\closedplugins\emaildll2\EMailDll.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="CustomerOnHold">
+			<MSBuild Projects="..\plugins\closedplugins\customeronhold\CustomerOnHold.dproj"/>
+		</Target>
+		<Target Name="CustomerOnHold:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\customeronhold\CustomerOnHold.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="CustomerOnHold:Make">
+			<MSBuild Projects="..\plugins\closedplugins\customeronhold\CustomerOnHold.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="DYNADBREG">
+			<MSBuild Projects="..\plugins\closedplugins\DYNADBREG\DYNADBREG.dproj"/>
+		</Target>
+		<Target Name="DYNADBREG:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\DYNADBREG\DYNADBREG.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="DYNADBREG:Make">
+			<MSBuild Projects="..\plugins\closedplugins\DYNADBREG\DYNADBREG.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Charter">
+			<MSBuild Projects="..\plugins\closedplugins\charter\Charter.dproj"/>
+		</Target>
+		<Target Name="Charter:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\charter\Charter.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Charter:Make">
+			<MSBuild Projects="..\plugins\closedplugins\charter\Charter.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Controlerlogin">
+			<MSBuild Projects="..\plugins\closedplugins\controlerLogin\Controlerlogin.dproj"/>
+		</Target>
+		<Target Name="Controlerlogin:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\controlerLogin\Controlerlogin.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Controlerlogin:Make">
+			<MSBuild Projects="..\plugins\closedplugins\controlerLogin\Controlerlogin.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Bankimport">
+			<MSBuild Projects="..\plugins\closedplugins\Bankimport\Bankimport.dproj"/>
+		</Target>
+		<Target Name="Bankimport:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\Bankimport\Bankimport.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Bankimport:Make">
+			<MSBuild Projects="..\plugins\closedplugins\Bankimport\Bankimport.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="BtwBE">
+			<MSBuild Projects="..\plugins\closedplugins\belgischeBtw\BtwBE.dproj"/>
+		</Target>
+		<Target Name="BtwBE:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\belgischeBtw\BtwBE.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="BtwBE:Make">
+			<MSBuild Projects="..\plugins\closedplugins\belgischeBtw\BtwBE.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="TCDrillDown">
+			<MSBuild Projects="..\plugins\closedplugins\tcDrilldown\TCDrillDown.dproj"/>
+		</Target>
+		<Target Name="TCDrillDown:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\tcDrilldown\TCDrillDown.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="TCDrillDown:Make">
+			<MSBuild Projects="..\plugins\closedplugins\tcDrilldown\TCDrillDown.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="ECommerce">
+			<MSBuild Projects="..\plugins\closedplugins\ECommerce\ECommerce.dproj"/>
+		</Target>
+		<Target Name="ECommerce:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\ECommerce\ECommerce.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="ECommerce:Make">
+			<MSBuild Projects="..\plugins\closedplugins\ECommerce\ECommerce.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="osFECommerceService">
+			<MSBuild Projects="..\plugins\closedplugins\ECommerce\ServiceApp\osFECommerceService.dproj"/>
+		</Target>
+		<Target Name="osFECommerceService:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\ECommerce\ServiceApp\osFECommerceService.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="osFECommerceService:Make">
+			<MSBuild Projects="..\plugins\closedplugins\ECommerce\ServiceApp\osFECommerceService.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="FileAndXMLExportImport">
+			<MSBuild Projects="..\plugins\closedplugins\XmlImportExport\FileAndXMLExportImport.dproj"/>
+		</Target>
+		<Target Name="FileAndXMLExportImport:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\XmlImportExport\FileAndXMLExportImport.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="FileAndXMLExportImport:Make">
+			<MSBuild Projects="..\plugins\closedplugins\XmlImportExport\FileAndXMLExportImport.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="RegMulti">
+			<MSBuild Projects="..\plugins\closedplugins\MultyUser\RegMulti.dproj"/>
+		</Target>
+		<Target Name="RegMulti:Clean">
+			<MSBuild Projects="..\plugins\closedplugins\MultyUser\RegMulti.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="RegMulti:Make">
+			<MSBuild Projects="..\plugins\closedplugins\MultyUser\RegMulti.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="ReportMan">
+			<MSBuild Projects="..\plugins\reportman\editor\ReportMan.dproj"/>
+		</Target>
+		<Target Name="ReportMan:Clean">
+			<MSBuild Projects="..\plugins\reportman\editor\ReportMan.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="ReportMan:Make">
+			<MSBuild Projects="..\plugins\reportman\editor\ReportMan.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="OSFinancials;MultiMedia;Subscription;StockCheck;Woodsales;XMLAuditfileFinancieel2;RETAILPOS;SendPackage;SqlBrowserDll;QuickOrder;Activa;RegisterPlugins;RegisterOnline;Payroll;PosPoints;PosDisplay;Postcodelookup;PriceAgreement;Promeetec;Remittance;OfficePro;DocumentImport;FreeFields;LocationBatchAndSerials;Mijnwinkel;MultiUserAgenda;ExportForWebsites;HandyTools;HORECAPOS;EmailInvoice;EMailDll;CustomerOnHold;DYNADBREG;Charter;Controlerlogin;Bankimport;BtwBE;TCDrillDown;ECommerce;osFECommerceService;FileAndXMLExportImport;RegMulti;ReportMan"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="OSFinancials:Clean;MultiMedia:Clean;Subscription:Clean;StockCheck:Clean;Woodsales:Clean;XMLAuditfileFinancieel2:Clean;RETAILPOS:Clean;SendPackage:Clean;SqlBrowserDll:Clean;QuickOrder:Clean;Activa:Clean;RegisterPlugins:Clean;RegisterOnline:Clean;Payroll:Clean;PosPoints:Clean;PosDisplay:Clean;Postcodelookup:Clean;PriceAgreement:Clean;Promeetec:Clean;Remittance:Clean;OfficePro:Clean;DocumentImport:Clean;FreeFields:Clean;LocationBatchAndSerials:Clean;Mijnwinkel:Clean;MultiUserAgenda:Clean;ExportForWebsites:Clean;HandyTools:Clean;HORECAPOS:Clean;EmailInvoice:Clean;EMailDll:Clean;CustomerOnHold:Clean;DYNADBREG:Clean;Charter:Clean;Controlerlogin:Clean;Bankimport:Clean;BtwBE:Clean;TCDrillDown:Clean;ECommerce:Clean;osFECommerceService:Clean;FileAndXMLExportImport:Clean;RegMulti:Clean;ReportMan:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="OSFinancials:Make;MultiMedia:Make;Subscription:Make;StockCheck:Make;Woodsales:Make;XMLAuditfileFinancieel2:Make;RETAILPOS:Make;SendPackage:Make;SqlBrowserDll:Make;QuickOrder:Make;Activa:Make;RegisterPlugins:Make;RegisterOnline:Make;Payroll:Make;PosPoints:Make;PosDisplay:Make;Postcodelookup:Make;PriceAgreement:Make;Promeetec:Make;Remittance:Make;OfficePro:Make;DocumentImport:Make;FreeFields:Make;LocationBatchAndSerials:Make;Mijnwinkel:Make;MultiUserAgenda:Make;ExportForWebsites:Make;HandyTools:Make;HORECAPOS:Make;EmailInvoice:Make;EMailDll:Make;CustomerOnHold:Make;DYNADBREG:Make;Charter:Make;Controlerlogin:Make;Bankimport:Make;BtwBE:Make;TCDrillDown:Make;ECommerce:Make;osFECommerceService:Make;FileAndXMLExportImport:Make;RegMulti:Make;ReportMan:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>

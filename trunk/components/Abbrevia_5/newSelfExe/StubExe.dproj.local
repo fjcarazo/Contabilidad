@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.886,=C:\Users\Pieter\Documents\RAD Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2012-12-27 13:00:29.687,=C:\Users\Pieter\Documents\RAD Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2012-12-27 13:04:38.805,E:\trunk\components\Abbrevia_5\newSelfExe\UShowProperties.pas=C:\Users\Pieter\Documents\RAD Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2012-12-27 13:04:38.805,E:\trunk\components\Abbrevia_5\newSelfExe\UShowProperties.dfm=C:\Users\Pieter\Documents\RAD Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2012-12-27 13:05:53.014,E:\trunk\components\Abbrevia_5\newSelfExe\StubExe.dproj=C:\Users\Pieter\Documents\RAD Studio\Projects\Project2.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,142 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = OSFinancials.exe MultiMedia.of3 Subscription.of4 StockCheck.of4 \
+  Woodsales.of4 XMLAuditfileFinancieel2.of4 RETAILPOS.of4 SendPackage.of4 \
+  SqlBrowserDll.of4 QuickOrder.of4 Activa.of4 RegisterPlugins.of4 \
+  RegisterOnline.tpd Payroll.tpd PosPoints.of4 PosDisplay.of4 Postcodelookup.of4 \
+  PriceAgreement.of4 Promeetec.of4 Remittance.of4 OfficePro.of4 \
+  DocumentImport.of4 FreeFields.of4 LocationBatchAndSerials.of4 Mijnwinkel.of4 \
+  MultiUserAgenda.of4 ExportForWebsites.of4 HandyTools.of4 HORECAPOS.of4 \
+  EmailInvoice.of4 EMailDll.tpd CustomerOnHold.of4 DYNADBREG.of4 ECommerce.of4 \
+  Charter.of4 Controlerlogin.of4 Bankimport.tpd BtwBE.of4 TCDrillDown.of4
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+OSFinancials.exe: OSFinancials\OSFinancials.dpr
+  $(DCC)
+
+MultiMedia.of3: ..\plugins\closedplugins\MMPack\MultiMedia.dpr
+  $(DCC)
+
+Subscription.of4: ..\plugins\closedplugins\Subscriptions\Subscription.dpr
+  $(DCC)
+
+StockCheck.of4: ..\plugins\closedplugins\STOCKCHECK\StockCheck.dpr
+  $(DCC)
+
+Woodsales.of4: ..\plugins\closedplugins\WoodSales\Woodsales.dpr
+  $(DCC)
+
+XMLAuditfileFinancieel2.of4: ..\plugins\closedplugins\xmlAuditfile2\XMLAuditfileFinancieel2.dpr
+  $(DCC)
+
+RETAILPOS.of4: ..\plugins\closedplugins\RETAILPOS\RETAILPOS.dpr
+  $(DCC)
+
+SendPackage.of4: ..\plugins\closedplugins\SendPackage\SendPackage.dpr
+  $(DCC)
+
+SqlBrowserDll.of4: ..\plugins\closedplugins\sqlbrowser\SqlBrowserDll.dpr
+  $(DCC)
+
+QuickOrder.of4: ..\plugins\closedplugins\QuickOrder\QuickOrder.dpr
+  $(DCC)
+
+Activa.of4: ..\plugins\closedplugins\RegActiva\Activa.dpr
+  $(DCC)
+
+RegisterPlugins.of4: ..\plugins\closedplugins\RegisterPlugins\RegisterPlugins.dpr
+  $(DCC)
+
+RegisterOnline.tpd: ..\plugins\closedplugins\regonline\RegisterOnline.dpr
+  $(DCC)
+
+Payroll.tpd: ..\plugins\closedplugins\Payroll\Payroll.dpr
+  $(DCC)
+
+PosPoints.of4: ..\plugins\closedplugins\POSPOINTS\PosPoints.dpr
+  $(DCC)
+
+PosDisplay.of4: ..\plugins\closedplugins\pospole\PosDisplay.dpr
+  $(DCC)
+
+Postcodelookup.of4: ..\plugins\closedplugins\Postcodelookup\Postcodelookup.dpr
+  $(DCC)
+
+PriceAgreement.of4: ..\plugins\closedplugins\PriceAgreement\PriceAgreement.dpr
+  $(DCC)
+
+Promeetec.of4: ..\plugins\closedplugins\prometic\Promeetec.dpr
+  $(DCC)
+
+Remittance.of4: ..\plugins\closedplugins\newRemittance\Remittance.dpr
+  $(DCC)
+
+OfficePro.of4: ..\plugins\closedplugins\officepro\OfficePro.dpr
+  $(DCC)
+
+DocumentImport.of4: ..\plugins\closedplugins\osFDocImport\DocumentImport.dpr
+  $(DCC)
+
+FreeFields.of4: ..\plugins\closedplugins\osFFreeField\FreeFields.dpr
+  $(DCC)
+
+LocationBatchAndSerials.of4: ..\plugins\closedplugins\LOCBATSER\LocationBatchAndSerials.dpr
+  $(DCC)
+
+Mijnwinkel.of4: ..\plugins\closedplugins\Mijnwinkel\plugin\Mijnwinkel.dpr
+  $(DCC)
+
+MultiUserAgenda.of4: ..\plugins\closedplugins\MutlyUserAgenda\MultiUserAgenda.dpr
+  $(DCC)
+
+ExportForWebsites.of4: ..\plugins\closedplugins\ExportForWebsites\ExportForWebsites.dpr
+  $(DCC)
+
+HandyTools.of4: ..\plugins\closedplugins\handyTools\HandyTools.dpr
+  $(DCC)
+
+HORECAPOS.of4: ..\plugins\closedplugins\HORECAPOS\HORECAPOS.dpr
+  $(DCC)
+
+EmailInvoice.of4: ..\plugins\closedplugins\emailInvoice\EmailInvoice.dpr
+  $(DCC)
+
+EMailDll.tpd: ..\plugins\closedplugins\emaildll2\EMailDll.dpr
+  $(DCC)
+
+CustomerOnHold.of4: ..\plugins\closedplugins\customeronhold\CustomerOnHold.dpr
+  $(DCC)
+
+DYNADBREG.of4: ..\plugins\closedplugins\DYNADBREG\DYNADBREG.dpr
+  $(DCC)
+
+ECommerce.of4: ..\plugins\closedplugins\ECommerce\ECommerce.dpr
+  $(DCC)
+
+Charter.of4: ..\plugins\closedplugins\charter\Charter.dpr
+  $(DCC)
+
+Controlerlogin.of4: ..\plugins\closedplugins\controlerLogin\Controlerlogin.dpr
+  $(DCC)
+
+Bankimport.tpd: ..\plugins\closedplugins\Bankimport\Bankimport.dpr
+  $(DCC)
+
+BtwBE.of4: ..\plugins\closedplugins\belgischeBtw\BtwBE.dpr
+  $(DCC)
+
+TCDrillDown.of4: ..\plugins\closedplugins\tcDrilldown\TCDrillDown.dpr
+  $(DCC)
+
+

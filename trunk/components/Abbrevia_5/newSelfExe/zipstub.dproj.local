@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.014,C:\Users\Pieter\Documents\RAD Studio\Projects\Project2.dproj=E:\trunk\components\Abbrevia_5\newSelfExe\StubExe.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.429,E:\trunk\components\Abbrevia_5\newSelfExe\UProgress.pas=E:\trunk\components\Abbrevia_5\newSelfExe\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.656,E:\trunk\components\Abbrevia_5\newSelfExe\StubExe.dproj=E:\trunk\components\Abbrevia_5\newSelfExe\zipstub.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.429,E:\trunk\components\Abbrevia_5\newSelfExe\UProgress.dfm=E:\trunk\components\Abbrevia_5\newSelfExe\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.235,=E:\trunk\components\Abbrevia_5\newSelfExe\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.687,=C:\Users\Pieter\Documents\RAD Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.805,C:\Users\Pieter\Documents\RAD Studio\Projects\Unit2.dfm=E:\trunk\components\Abbrevia_5\newSelfExe\UShowProperties.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.805,C:\Users\Pieter\Documents\RAD Studio\Projects\Unit2.pas=E:\trunk\components\Abbrevia_5\newSelfExe\UShowProperties.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.886,=C:\Users\Pieter\Documents\RAD Studio\Projects\Unit2.pas</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,33 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = reports.dll OSFinancials.exe Reportman.dll ReportMan.mpt \
+  HandyTools.mpt
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+reports.dll: reports.dpr
+  $(DCC)
+
+OSFinancials.exe: ..\OSFinancials.dpr
+  $(DCC)
+
+Reportman.dll: ..\..\reportman\viewer\Reportman.dpr
+  $(DCC)
+
+ReportMan.mpt: ..\..\reportman\editor\ReportMan.dpr
+  $(DCC)
+
+HandyTools.mpt: ..\..\closedplugins\handyTools\HandyTools.dpr
+  $(DCC)
+
+

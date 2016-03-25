@@ -1,0 +1,551 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{243BD6A3-84BE-4B6E-B92B-C420F1BE2AA1}</ProjectGuid>
+			<MainSource>OSFinancials.dpr</MainSource>
+			<Base>True</Base>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+			<Platform>Win32</Platform>
+			<AppType>Application</AppType>
+			<FrameworkType>VCL</FrameworkType>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+			<ProjectVersion>12.3</ProjectVersion>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<UsePackages>true</UsePackages>
+			<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_UsePackage>vclimg;vcl;vclx;dbrtl;rtl;vclactnband;vcldb;vcldbx;vcltouch;vclib;IndyCore;IndySystem;IndyProtocols;vclribbon;dxCoreD15;cxLibraryD15;cxPageControlD15;cxEditorsD15;cxExtEditorsD15;cxGridD15;dxmdsD15;unidacvcl150;unidac150;ibprovider150;myprovider150;oraprovider150;rppack_del;rppackvcl_del;osfresource;rppackdesignvcl_del;SingleCompPack</DCC_UsePackage>
+			<DCC_IOChecking>false</DCC_IOChecking>
+			<DCC_MinStackSize>24576</DCC_MinStackSize>
+			<DCC_WriteableConstants>true</DCC_WriteableConstants>
+			<DCC_UNIT_DEPRECATED>false</DCC_UNIT_DEPRECATED>
+			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;WinTypes=Windows;WinProcs=Windows;$(DCC_UnitAlias)</DCC_UnitAlias>
+			<DCC_ImageBase>00400000</DCC_ImageBase>
+			<DCC_ExeOutput>C:\osFinancials</DCC_ExeOutput>
+			<DCC_K>false</DCC_K>
+			<DCC_F>false</DCC_F>
+			<DCC_S>false</DCC_S>
+			<DCC_N>true</DCC_N>
+			<DCC_E>false</DCC_E>
+			<DCC_UNIT_PLATFORM>false</DCC_UNIT_PLATFORM>
+			<DCC_SUSPICIOUS_TYPECAST>false</DCC_SUSPICIOUS_TYPECAST>
+			<DCC_AssertionsAtRuntime>false</DCC_AssertionsAtRuntime>
+			<DCC_DcuOutput>..\..\..\..\osfdcu</DCC_DcuOutput>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+			<DCC_Define>RELEASE;COMPILER12_UP;$(DCC_Define)</DCC_Define>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_DebugInformation>false</DCC_DebugInformation>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<DCC_DebugInformation>false</DCC_DebugInformation>
+			<BCC_DebugLineNumbers>true</BCC_DebugLineNumbers>
+			<ILINK_FullDebugInfo>true</ILINK_FullDebugInfo>
+			<DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+			<BCC_SourceDebuggingOn>true</BCC_SourceDebuggingOn>
+			<DCC_ExeOutput>E:\osfinancials\</DCC_ExeOutput>
+			<DCC_Define>DEBUG;COMPILER12_UP;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="OSFinancials.dpr">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="General\Main.pas">
+				<Form>fmMain</Form>
+			</DCCReference>
+			<DCCReference Include="Books\Database.pas">
+				<Form>dmDatabase</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="General\About.pas">
+				<Form>fmAbout</Form>
+			</DCCReference>
+			<DCCReference Include="Books\OpenASetOfBooks.pas">
+				<Form>fmOpenASetOfBooks</Form>
+			</DCCReference>
+			<DCCReference Include="Books\DeleteASetOfBooks.pas">
+				<Form>fmDeleteASetOfBooks</Form>
+			</DCCReference>
+			<DCCReference Include="Books\ChangeBooksProperties.pas">
+				<Form>fmChangeBooksProperties</Form>
+			</DCCReference>
+			<DCCReference Include="General\IntroScreen.pas">
+				<Form>fmIntroScreen</Form>
+			</DCCReference>
+			<DCCReference Include="General\Password.pas">
+				<Form>fmPassword</Form>
+			</DCCReference>
+			<DCCReference Include="General\AccessControl.pas">
+				<Form>fmAccessControl</Form>
+			</DCCReference>
+			<DCCReference Include="Documents\Salesman.pas">
+				<Form>fmSalesman</Form>
+			</DCCReference>
+			<DCCReference Include="General\CompanyInfo.pas">
+				<Form>fmCompanyInfo</Form>
+			</DCCReference>
+			<DCCReference Include="Documents\Groups.pas">
+				<Form>fmGroups</Form>
+			</DCCReference>
+			<DCCReference Include="Books\Periods.pas">
+				<Form>fmPeriods</Form>
+			</DCCReference>
+			<DCCReference Include="Documents\DocSetup.pas">
+				<Form>fmDocumentSetup</Form>
+			</DCCReference>
+			<DCCReference Include="Documents\StockInfo.pas">
+				<Form>fmStockInfo</Form>
+			</DCCReference>
+			<DCCReference Include="General\Directory.pas">
+				<Form>fmDirectory</Form>
+			</DCCReference>
+			<DCCReference Include="Batch\SelectBatchType.pas">
+				<Form>fmSelectBatchType</Form>
+			</DCCReference>
+			<DCCReference Include="Batch\SetAbbreviations.pas">
+				<Form>fmSetAbbreviations</Form>
+			</DCCReference>
+			<DCCReference Include="General\SelectUser.pas">
+				<Form>fmSelectUser</Form>
+			</DCCReference>
+			<DCCReference Include="Books\LanguageChoice.pas">
+				<Form>fmLangChoice</Form>
+			</DCCReference>
+			<DCCReference Include="Shared\HtmlHelpAPI.pas"/>
+			<DCCReference Include="Documents\Debtor.pas">
+				<Form>fmDebtor</Form>
+			</DCCReference>
+			<DCCReference Include="General\TAccountView.pas">
+				<Form>fmTAccountView</Form>
+			</DCCReference>
+			<DCCReference Include="Documents\StockEntry.pas">
+				<Form>fmStockEntry</Form>
+			</DCCReference>
+			<DCCReference Include="Documents\InvoiceEntryGrid.pas">
+				<Form>fmInvoiceEntryGrid</Form>
+			</DCCReference>
+			<DCCReference Include="Documents\ConfirmDocs.pas">
+				<Form>fmConfirmDocs</Form>
+			</DCCReference>
+			<DCCReference Include="Batch\BatchPeriodTotals.pas">
+				<Form>FrmBatchPeriodTotals</Form>
+			</DCCReference>
+			<DCCReference Include="Batch\BatchOptions.pas">
+				<Form>fmBatchOptions</Form>
+			</DCCReference>
+			<DCCReference Include="Batch\BatchPayDebtors.pas">
+				<Form>frBatchPayDebtors</Form>
+			</DCCReference>
+			<DCCReference Include="Batch\BatchProcessMenu.pas">
+				<Form>fmBatchProcessMenu</Form>
+			</DCCReference>
+			<DCCReference Include="Batch\BatchEntry.pas">
+				<Form>fmBatchEntry</Form>
+			</DCCReference>
+			<DCCReference Include="Batch\BatchTypes.pas">
+				<Form>fmBatchTypes</Form>
+			</DCCReference>
+			<DCCReference Include="Batch\ReverseBatch.pas">
+				<Form>FormReverseBatch</Form>
+			</DCCReference>
+			<DCCReference Include="Batch\BatchPayCreditors.pas">
+				<Form>frPayCreditors</Form>
+			</DCCReference>
+			<DCCReference Include="Batch\BatchEntryBank.pas">
+				<Form>fmBatchEntryBank</Form>
+			</DCCReference>
+			<DCCReference Include="Books\DataEntry.pas">
+				<Form>fmDataEntry</Form>
+			</DCCReference>
+			<DCCReference Include="Books\SaveAs.pas">
+				<Form>fmSaveAs</Form>
+			</DCCReference>
+			<DCCReference Include="General\CentralSearch.pas">
+				<Form>fmInvestigator</Form>
+			</DCCReference>
+			<DCCReference Include="..\pluginsShared\UMsgBox.pas">
+				<Form>MyMsgBox</Form>
+			</DCCReference>
+			<DCCReference Include="Shared\EvaluateExpressions.pas"/>
+			<DCCReference Include="General\SendEmailReport.pas">
+				<Form>fmSendEmailReport</Form>
+			</DCCReference>
+			<DCCReference Include="Batch\EnterLinkAmount.pas">
+				<Form>fmEnterLinkAmount</Form>
+			</DCCReference>
+			<DCCReference Include="Batch\UnReconcileOptions.pas">
+				<Form>fmUnReconcileOptions</Form>
+			</DCCReference>
+			<DCCReference Include="Batch\OpenLink.pas">
+				<Form>fmOpenLink</Form>
+			</DCCReference>
+			<DCCReference Include="Batch\UpdateInvoice.pas">
+				<Form>fmUpdateInvoice</Form>
+			</DCCReference>
+			<DCCReference Include="Documents\InvoiceHistory.pas">
+				<Form>fmInvoiceHistory</Form>
+			</DCCReference>
+			<DCCReference Include="Reports\DataIntegrityCheck.pas">
+				<Form>fmDataIntegrityCheck</Form>
+			</DCCReference>
+			<DCCReference Include="Reports\GetReportDate.pas">
+				<Form>fmGetDateValue</Form>
+			</DCCReference>
+			<DCCReference Include="Batch\GenMutliEntry.pas">
+				<Form>fmGenMutliEntry</Form>
+			</DCCReference>
+			<DCCReference Include="Batch\EditReceipts.pas">
+				<Form>fmEditReceipts</Form>
+			</DCCReference>
+			<DCCReference Include="Account\SelectAccountType.pas">
+				<Form>frmSelectAccountType</Form>
+			</DCCReference>
+			<DCCReference Include="Batch\TransfertTrans.pas">
+				<Form>frmTransfertTrans</Form>
+			</DCCReference>
+			<DCCReference Include="General\Support.pas">
+				<Form>fmSupport</Form>
+			</DCCReference>
+			<DCCReference Include="Account\FinancialCategories.pas">
+				<Form>fmFinancialCategories</Form>
+			</DCCReference>
+			<DCCReference Include="Shared\ConvTOX.pas"/>
+			<DCCReference Include="Batch\OpenItemSelection.pas">
+				<Form>fmOpenItemSelection</Form>
+			</DCCReference>
+			<DCCReference Include="Books\ZipBackupRestore.pas">
+				<Form>fmZipBackupRestore</Form>
+			</DCCReference>
+			<DCCReference Include="Books\CreationCompWiz.pas">
+				<Form>fmCreationCompWiz</Form>
+			</DCCReference>
+			<DCCReference Include="General\Calculator.pas">
+				<Form>frmCalculator</Form>
+			</DCCReference>
+			<DCCReference Include="Shared\LotusWKx.pas"/>
+			<DCCReference Include="Books\CustomLang.pas">
+				<Form>fmCustomLang</Form>
+			</DCCReference>
+			<DCCReference Include="Shared\Read123.pas"/>
+			<DCCReference Include="Shared\Progress.pas">
+				<Form>fmProgress</Form>
+			</DCCReference>
+			<DCCReference Include="Shared\ExportToSpreadSheet.pas"/>
+			<DCCReference Include="Shared\ExchangeTCData.pas"/>
+			<DCCReference Include="Books\ExportTcData.pas">
+				<Form>fmExportData</Form>
+			</DCCReference>
+			<DCCReference Include="Books\DataImport.pas">
+				<Form>fmDataImport</Form>
+			</DCCReference>
+			<DCCReference Include="Shared\UImportCheck.pas">
+				<Form>ImportCheck</Form>
+			</DCCReference>
+			<DCCReference Include="Shared\SpreadSheetsIO.pas"/>
+			<DCCReference Include="Documents\PosSetup.pas">
+				<Form>fmPosSetup</Form>
+			</DCCReference>
+			<DCCReference Include="Shared\PosRoutines.pas"/>
+			<DCCReference Include="Documents\PosEntry.pas">
+				<Form>fmPosInvoiceEntry</Form>
+			</DCCReference>
+			<DCCReference Include="Documents\PosPayments.pas">
+				<Form>fmPosPayments</Form>
+			</DCCReference>
+			<DCCReference Include="Documents\PosPassword.pas">
+				<Form>fmPosPassword</Form>
+			</DCCReference>
+			<DCCReference Include="Documents\PosInvoiceInfo.pas">
+				<Form>fmPosInvoiceInfo</Form>
+			</DCCReference>
+			<DCCReference Include="Documents\PosCashup.pas">
+				<Form>fmPosCashup</Form>
+			</DCCReference>
+			<DCCReference Include="Reports\PosReportOptions.pas">
+				<Form>fmPosReportOptions</Form>
+			</DCCReference>
+			<DCCReference Include="Shared\XRoutines.pas"/>
+			<DCCReference Include="Shared\GlobalFunctions.pas"/>
+			<DCCReference Include="Shared\LedgerRoutines.pas"/>
+			<DCCReference Include="Shared\DatabaseAccess.pas"/>
+			<DCCReference Include="Shared\TcashClasses.pas"/>
+			<DCCReference Include="Shared\TcVariables.pas"/>
+			<DCCReference Include="Account\NewLookup.pas">
+				<Form>fmPosLookup</Form>
+			</DCCReference>
+			<DCCReference Include="General\Fonts.pas">
+				<Form>fmFonts</Form>
+			</DCCReference>
+			<DCCReference Include="General\WelcomHelp.pas">
+				<Form>FrmWelcome</Form>
+			</DCCReference>
+			<DCCReference Include="General\MainWizard.pas">
+				<Form>fmMainWizard</Form>
+			</DCCReference>
+			<DCCReference Include="Planit\VpTCEvntEditDlg.pas">
+				<Form>DlgEventTCEdit</Form>
+			</DCCReference>
+			<DCCReference Include="Planit\VpTaskTCEditDlg.pas">
+				<Form>TaskTCEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="Planit\VpResTCEditDlg.pas">
+				<Form>ResEditTCForm</Form>
+			</DCCReference>
+			<DCCReference Include="Planit\VpContactTCEditDlg.pas">
+				<Form>ContactTCEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="Planit\TCDayPlanner.pas">
+				<Form>PlanerMainForm</Form>
+			</DCCReference>
+			<DCCReference Include="Planit\ExVpRptSetup.pas">
+				<Form>frmReportSetup</Form>
+			</DCCReference>
+			<DCCReference Include="Planit\ExVpAbout.pas">
+				<Form>frmAbout</Form>
+			</DCCReference>
+			<DCCReference Include="Planit\VpTaskActionEditDlg.pas">
+				<Form>FormTaskEditDlg</Form>
+			</DCCReference>
+			<DCCReference Include="Planit\VpTCAlarmDlg.pas">
+				<Form>TCAlarmNotifyForm</Form>
+			</DCCReference>
+			<DCCReference Include="Reports\ReconcileBank.pas">
+				<Form>fmReconcileBank</Form>
+			</DCCReference>
+			<DCCReference Include="General\Registration.pas">
+				<Form>fmRegister</Form>
+			</DCCReference>
+			<DCCReference Include="Shared\NewGlobalFunctions.pas"/>
+			<DCCReference Include="General\AccountSelect.pas">
+				<Form>frmAccountSelect</Form>
+			</DCCReference>
+			<DCCReference Include="Batch\PaymentType.pas">
+				<Form>fmPaymentType</Form>
+			</DCCReference>
+			<DCCReference Include="Shared\UPluginsSharedUnit.pas"/>
+			<DCCReference Include="Shared\UDMCoreDocData.pas">
+				<Form>DMCoreDocData</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="Shared\UDMCoreData.pas">
+				<Form>DMCoreData</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="Shared\OSFGeneralRoutines.pas"/>
+			<DCCReference Include="Shared\UConnectionClass.pas"/>
+			<DCCReference Include="Shared\NewProgress.pas">
+				<Form>fmNewProgress</Form>
+			</DCCReference>
+			<DCCReference Include="..\pluginsShared\UDMTCCoreLink.pas">
+				<Form>DMTCCoreLink</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="Shared\USetPrinters.pas">
+				<Form>frSetPrinter</Form>
+			</DCCReference>
+			<DCCReference Include="..\pluginsShared\UOSFVisuals.pas"/>
+			<DCCReference Include="..\pluginsShared\osfLookup.pas">
+				<Form>osfLookup</Form>
+			</DCCReference>
+			<DCCReference Include="Account\UAccountTreeView.pas">
+				<Form>AccountTreeView</Form>
+			</DCCReference>
+			<DCCReference Include="Account\UGeneralEditAccount.pas">
+				<Form>GeneralEditAccount</Form>
+			</DCCReference>
+			<DCCReference Include="Planit\UFromToDates.pas">
+				<Form>FormReportingDates</Form>
+			</DCCReference>
+			<DCCReference Include="Account\UDmCoreAccountData.pas">
+				<Form>DMCoreAccountData</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="Reports\ReconOptions.pas">
+				<Form>fmReconOptions</Form>
+			</DCCReference>
+			<DCCReference Include="Reports\FreeReportsUnit.pas">
+				<Form>frmFreeReports</Form>
+			</DCCReference>
+			<DCCReference Include="Shared\DosTextPrint.pas"/>
+			<DCCReference Include="Shared\DosTextReports.pas"/>
+			<DCCReference Include="General\CheckUnpost.pas">
+				<Form>fmCheckUnpost</Form>
+			</DCCReference>
+			<DCCReference Include="..\pluginsShared\janstrings.pas"/>
+			<DCCReference Include="JobProject\UMainJobProject.pas">
+				<Form>JobProject</Form>
+			</DCCReference>
+			<DCCReference Include="OSFinancials_TLB.pas"/>
+			<DCCReference Include="..\pluginsShared\UGenSearch.pas">
+				<Form>GenSearch</Form>
+			</DCCReference>
+			<DCCReference Include="Planit\UEditSpecialDays.pas">
+				<Form>fmEditSpecialDays</Form>
+			</DCCReference>
+			<DCCReference Include="Shared\InvoicePayment.pas">
+				<Form>fmInvocePayment</Form>
+			</DCCReference>
+			<DCCReference Include="Documents\UItemOptions.pas">
+				<Form>ItemOptions</Form>
+			</DCCReference>
+			<DCCReference Include="Documents\UDocSelectOptions.pas">
+				<Form>DocSelectOptions</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\plugins\reportman\viewer\UReportManager.pas">
+				<Form>ReportManager</Form>
+			</DCCReference>
+			<DCCReference Include="..\pluginsShared\UPOSSHARED.pas"/>
+			<DCCReference Include="Shared\ULocBatSerInput.pas">
+				<Form>LocBatSerInput</Form>
+			</DCCReference>
+			<DCCReference Include="..\pluginsShared\UEditAccountRef.pas">
+				<Form>fmEditAccountRef</Form>
+			</DCCReference>
+			<DCCReference Include="..\pluginsShared\ULookupPeriods.pas">
+				<Form>FrameLookupPeriods</Form>
+				<DesignClass>TFrame</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\pluginsShared\UCheckPlugins.pas">
+				<Form>fmCheckPlugins</Form>
+			</DCCReference>
+			<DCCReference Include="ReportsDll\Newforms\UDMReportsGlobals.pas">
+				<Form>DMReportsGlobals</Form>
+			</DCCReference>
+			<DCCReference Include="Shared\UStockLinkDetail.pas">
+				<Form>StockLinkDetail</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\plugins\closedplugins\workflow\Uworkflowtoolbox.pas">
+				<Form>fmWorkFlowToolBox</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\plugins\closedplugins\workflow\UWorkFlowHistory.pas">
+				<Form>fmWorkFlowHistory</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\plugins\closedplugins\workflow\UWorkFlowDatamodule.pas">
+				<Form>dmWorkflowData</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\..\plugins\closedplugins\workflow\UWorkFlowHandel.pas">
+				<Form>fmWorkFlowHandel</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\plugins\closedplugins\workflow\UWorkFlowExeCuteStep.pas">
+				<Form>fmWorkflowExecuteStep</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\plugins\closedplugins\workflow\Uworkflowsetup.pas">
+				<Form>fmWorkflow</Form>
+			</DCCReference>
+			<DCCReference Include="General\UEditCurrencies.pas">
+				<Form>fmEditCurrencies</Form>
+			</DCCReference>
+			<DCCReference Include="..\pluginsShared\UOutLookEmailForm.pas">
+				<Form>fmOutlookEmail</Form>
+			</DCCReference>
+			<DCCReference Include="..\pluginsShared\UDocRefLinks.pas">
+				<Form>fmDocLinks</Form>
+			</DCCReference>
+			<DCCReference Include="Planit\UEventList.pas">
+				<Form>fmEventList</Form>
+			</DCCReference>
+			<DCCReference Include="General\NetSetUp.pas">
+				<Form>fmNetSetUp</Form>
+			</DCCReference>
+			<DCCReference Include="..\pluginsShared\UDmQuantumGridDefs.pas">
+				<Form>dmQuantumGridDefs</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\pluginsShared\UTranslateQuantumgrid.pas"/>
+			<DCCReference Include="Documents\ContactListing.pas">
+				<Form>fmContactListing</Form>
+			</DCCReference>
+			<DCCReference Include="Documents\BackOrdersOutstanding.pas">
+				<Form>fmBackOrdersOutstanding</Form>
+			</DCCReference>
+			<DCCReference Include="Batch\ULookupGrids.pas">
+				<Form>fmLookupgrids</Form>
+			</DCCReference>
+			<DCCReference Include="Documents\UNewDocdetails.pas">
+				<Form>fmDocdetails</Form>
+			</DCCReference>
+			<DCCReference Include="Account\Lookup.pas">
+				<Form>FmLookup</Form>
+			</DCCReference>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
+		<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj"/>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType>VCLApplication</Borland.ProjectType>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Source>
+						<Source Name="MainSource">OSFinancials.dpr</Source>
+					</Source>
+					<Language>
+						<Language Name="ProjectLang">$00000809</Language>
+						<Language Name="RootDir">E:\trunk\sources\OSFinancials\</Language>
+					</Language>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">True</VersionInfo>
+						<VersionInfo Name="MajorVer">4</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">222</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1033</VersionInfo>
+						<VersionInfo Name="CodePage">1252</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName">osFinancials</VersionInfoKeys>
+						<VersionInfoKeys Name="FileDescription">osFinancials opensource accounting</VersionInfoKeys>
+						<VersionInfoKeys Name="FileVersion">4.0.0.222</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright">GPL</VersionInfoKeys>
+						<VersionInfoKeys Name="LegalTrademarks">osFinancials</VersionInfoKeys>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName"/>
+						<VersionInfoKeys Name="ProductVersion">4.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Compiled">By Pieter Valentijn</VersionInfoKeys>
+						<VersionInfoKeys Name="BASETYPE">0</VersionInfoKeys>
+						<VersionInfoKeys Name="ININAME">osf.ini</VersionInfoKeys>
+					</VersionInfoKeys>
+					<Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dcloffice2k150.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dclofficexp150.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+					</Excluded_Packages>
+				</Delphi.Personality>
+				<Platforms>
+					<Platform value="Win32">True</Platform>
+				</Platforms>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.747,=E:\trunk\components\memcheck\IOTextDevices.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.637,=E:\trunk\sources\OSFinancials\Profiling\AQtimeModule1.aqt</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.134,E:\trunk\sources\OSFinancials\Profiling\AQtimeModule1.aqt=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.430,E:\trunk\sources\OSFinancials\Account\Lookup.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.420,=E:\trunk\sources\OSFinancials\Account\Lookup.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.382,E:\trunk\sources\OSFinancials\General\PaperSetup.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.279,E:\trunk\components\TIFF\ZLibDelphi.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.477,E:\trunk\components\TIFF\LibJpegDelphi.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.286,E:\trunk\components\TIFF\LibDelphi.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.436,E:\trunk\components\TIFF\LibTiffDelphi.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.986,=E:\trunk\components\memcheck\uMemCheck.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.768,E:\trunk\sources\OSFinancials\Shared\PosLinkInterf.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.255,=E:\trunk\components\memcheck\MemCheck.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="-1" SortType="1"/>
+</BorlandProject>

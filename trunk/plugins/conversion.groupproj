@@ -1,0 +1,60 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{65259D01-F1C1-45D9-B959-08B17666E3DA}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="osf_to_osf2conversion\Conversion_osf1.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="TC3conversion\Conversion.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="T4Conversion\Conversiontc4.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="Conversion_osf1">
+			<MSBuild Projects="osf_to_osf2conversion\Conversion_osf1.dproj"/>
+		</Target>
+		<Target Name="Conversion_osf1:Clean">
+			<MSBuild Projects="osf_to_osf2conversion\Conversion_osf1.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Conversion_osf1:Make">
+			<MSBuild Projects="osf_to_osf2conversion\Conversion_osf1.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Conversion">
+			<MSBuild Projects="TC3conversion\Conversion.dproj"/>
+		</Target>
+		<Target Name="Conversion:Clean">
+			<MSBuild Projects="TC3conversion\Conversion.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Conversion:Make">
+			<MSBuild Projects="TC3conversion\Conversion.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Conversiontc4">
+			<MSBuild Projects="T4Conversion\Conversiontc4.dproj"/>
+		</Target>
+		<Target Name="Conversiontc4:Clean">
+			<MSBuild Projects="T4Conversion\Conversiontc4.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Conversiontc4:Make">
+			<MSBuild Projects="T4Conversion\Conversiontc4.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="Conversion_osf1;Conversion;Conversiontc4"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="Conversion_osf1:Clean;Conversion:Clean;Conversiontc4:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="Conversion_osf1:Make;Conversion:Make;Conversiontc4:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>

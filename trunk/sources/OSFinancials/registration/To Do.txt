@@ -1,0 +1,11 @@
+Newsletters zijn er meer dan osC aan kan
+
+Lengte van de invoer velden.
+
+Wachtwoord MD 5 + die van Joomla
+
+7735bbe4288d872ce2529340ae651a0e:41 = wachtwoord
+7735bbe4288d872ce2529340ae651a0e:41
+
+
+Ophalen van de gegevens als het account al bestaat

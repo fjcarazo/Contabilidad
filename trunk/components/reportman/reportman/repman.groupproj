@@ -1,0 +1,60 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{9D338CBD-69E0-48D1-BECB-1B7D13A9CF7A}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="rppackdesignvcl_del.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="rppackvcl_del.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="rppack_del.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="rppackdesignvcl_del">
+			<MSBuild Projects="rppackdesignvcl_del.dproj"/>
+		</Target>
+		<Target Name="rppackdesignvcl_del:Clean">
+			<MSBuild Projects="rppackdesignvcl_del.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="rppackdesignvcl_del:Make">
+			<MSBuild Projects="rppackdesignvcl_del.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="rppackvcl_del">
+			<MSBuild Projects="rppackvcl_del.dproj"/>
+		</Target>
+		<Target Name="rppackvcl_del:Clean">
+			<MSBuild Projects="rppackvcl_del.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="rppackvcl_del:Make">
+			<MSBuild Projects="rppackvcl_del.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="rppack_del">
+			<MSBuild Projects="rppack_del.dproj"/>
+		</Target>
+		<Target Name="rppack_del:Clean">
+			<MSBuild Projects="rppack_del.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="rppack_del:Make">
+			<MSBuild Projects="rppack_del.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="rppackdesignvcl_del;rppackvcl_del;rppack_del"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="rppackdesignvcl_del:Clean;rppackvcl_del:Clean;rppack_del:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="rppackdesignvcl_del:Make;rppackvcl_del:Make;rppack_del:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>

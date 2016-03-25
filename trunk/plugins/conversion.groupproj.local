@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.951,C:\Users\Pieter\Documents\RAD Studio\Projects\ProjectGroup1.groupproj=E:\trunk\plugins\conversion.groupproj</Transaction>
+  </Transactions>
+	<Default.Personality>
+		<Projects ActiveProject="E:\trunk\plugins\T4Conversion\Conversiontc4.dproj"/>
+	</Default.Personality>
+</BorlandProject>

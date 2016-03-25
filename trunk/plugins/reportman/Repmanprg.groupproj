@@ -1,0 +1,204 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{B4FBB1D3-EC97-42EB-92C5-58CBBAB374E4}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="..\..\sources\OSFinancials\OSFinancials.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\closedplugins\Openbooks\Openbooks.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\..\sources\OSFinancials\ReportsDll\reports.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\closedplugins\ECommerce\ServiceApp\osFECommerceService.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\closedplugins\emailInvoice\EmailInvoice.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\closedplugins\emaildll2\EMailDll.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="viewer\Reportman.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\ExportImport\ExportImport.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\closedplugins\electrowikkel\ElectroWikkel.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\OSCommercePlugin\OSCommerceImport.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\closedplugins\rijschoolplugin\Rijschool.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\closedplugins\BAPI\OBAangifte2.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\closedplugins\PIN\CCV\Module\PINCTAP.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\closedplugins\sqlbrowser\SqlBrowserDll.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\osf_to_osf2conversion\Conversion_osf1.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="OSFinancials">
+			<MSBuild Projects="..\..\sources\OSFinancials\OSFinancials.dproj"/>
+		</Target>
+		<Target Name="OSFinancials:Clean">
+			<MSBuild Projects="..\..\sources\OSFinancials\OSFinancials.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="OSFinancials:Make">
+			<MSBuild Projects="..\..\sources\OSFinancials\OSFinancials.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Openbooks">
+			<MSBuild Projects="..\closedplugins\Openbooks\Openbooks.dproj"/>
+		</Target>
+		<Target Name="Openbooks:Clean">
+			<MSBuild Projects="..\closedplugins\Openbooks\Openbooks.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Openbooks:Make">
+			<MSBuild Projects="..\closedplugins\Openbooks\Openbooks.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="reports">
+			<MSBuild Projects="..\..\sources\OSFinancials\ReportsDll\reports.dproj"/>
+		</Target>
+		<Target Name="reports:Clean">
+			<MSBuild Projects="..\..\sources\OSFinancials\ReportsDll\reports.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="reports:Make">
+			<MSBuild Projects="..\..\sources\OSFinancials\ReportsDll\reports.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="osFECommerceService">
+			<MSBuild Projects="..\closedplugins\ECommerce\ServiceApp\osFECommerceService.dproj"/>
+		</Target>
+		<Target Name="osFECommerceService:Clean">
+			<MSBuild Projects="..\closedplugins\ECommerce\ServiceApp\osFECommerceService.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="osFECommerceService:Make">
+			<MSBuild Projects="..\closedplugins\ECommerce\ServiceApp\osFECommerceService.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="EmailInvoice">
+			<MSBuild Projects="..\closedplugins\emailInvoice\EmailInvoice.dproj"/>
+		</Target>
+		<Target Name="EmailInvoice:Clean">
+			<MSBuild Projects="..\closedplugins\emailInvoice\EmailInvoice.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="EmailInvoice:Make">
+			<MSBuild Projects="..\closedplugins\emailInvoice\EmailInvoice.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="EMailDll">
+			<MSBuild Projects="..\closedplugins\emaildll2\EMailDll.dproj"/>
+		</Target>
+		<Target Name="EMailDll:Clean">
+			<MSBuild Projects="..\closedplugins\emaildll2\EMailDll.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="EMailDll:Make">
+			<MSBuild Projects="..\closedplugins\emaildll2\EMailDll.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Reportman">
+			<MSBuild Projects="viewer\Reportman.dproj"/>
+		</Target>
+		<Target Name="Reportman:Clean">
+			<MSBuild Projects="viewer\Reportman.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Reportman:Make">
+			<MSBuild Projects="viewer\Reportman.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="ExportImport">
+			<MSBuild Projects="..\ExportImport\ExportImport.dproj"/>
+		</Target>
+		<Target Name="ExportImport:Clean">
+			<MSBuild Projects="..\ExportImport\ExportImport.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="ExportImport:Make">
+			<MSBuild Projects="..\ExportImport\ExportImport.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="ElectroWikkel">
+			<MSBuild Projects="..\closedplugins\electrowikkel\ElectroWikkel.dproj"/>
+		</Target>
+		<Target Name="ElectroWikkel:Clean">
+			<MSBuild Projects="..\closedplugins\electrowikkel\ElectroWikkel.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="ElectroWikkel:Make">
+			<MSBuild Projects="..\closedplugins\electrowikkel\ElectroWikkel.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="OSCommerceImport">
+			<MSBuild Projects="..\OSCommercePlugin\OSCommerceImport.dproj"/>
+		</Target>
+		<Target Name="OSCommerceImport:Clean">
+			<MSBuild Projects="..\OSCommercePlugin\OSCommerceImport.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="OSCommerceImport:Make">
+			<MSBuild Projects="..\OSCommercePlugin\OSCommerceImport.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Rijschool">
+			<MSBuild Projects="..\closedplugins\rijschoolplugin\Rijschool.dproj"/>
+		</Target>
+		<Target Name="Rijschool:Clean">
+			<MSBuild Projects="..\closedplugins\rijschoolplugin\Rijschool.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Rijschool:Make">
+			<MSBuild Projects="..\closedplugins\rijschoolplugin\Rijschool.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="OBAangifte2">
+			<MSBuild Projects="..\closedplugins\BAPI\OBAangifte2.dproj"/>
+		</Target>
+		<Target Name="OBAangifte2:Clean">
+			<MSBuild Projects="..\closedplugins\BAPI\OBAangifte2.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="OBAangifte2:Make">
+			<MSBuild Projects="..\closedplugins\BAPI\OBAangifte2.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="PINCTAP">
+			<MSBuild Projects="..\closedplugins\PIN\CCV\Module\PINCTAP.dproj"/>
+		</Target>
+		<Target Name="PINCTAP:Clean">
+			<MSBuild Projects="..\closedplugins\PIN\CCV\Module\PINCTAP.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="PINCTAP:Make">
+			<MSBuild Projects="..\closedplugins\PIN\CCV\Module\PINCTAP.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="SqlBrowserDll">
+			<MSBuild Projects="..\closedplugins\sqlbrowser\SqlBrowserDll.dproj"/>
+		</Target>
+		<Target Name="SqlBrowserDll:Clean">
+			<MSBuild Projects="..\closedplugins\sqlbrowser\SqlBrowserDll.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="SqlBrowserDll:Make">
+			<MSBuild Projects="..\closedplugins\sqlbrowser\SqlBrowserDll.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Conversion_osf1">
+			<MSBuild Projects="..\osf_to_osf2conversion\Conversion_osf1.dproj"/>
+		</Target>
+		<Target Name="Conversion_osf1:Clean">
+			<MSBuild Projects="..\osf_to_osf2conversion\Conversion_osf1.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Conversion_osf1:Make">
+			<MSBuild Projects="..\osf_to_osf2conversion\Conversion_osf1.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="OSFinancials;Openbooks;reports;osFECommerceService;EmailInvoice;EMailDll;Reportman;ExportImport;ElectroWikkel;OSCommerceImport;Rijschool;OBAangifte2;PINCTAP;SqlBrowserDll;Conversion_osf1"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="OSFinancials:Clean;Openbooks:Clean;reports:Clean;osFECommerceService:Clean;EmailInvoice:Clean;EMailDll:Clean;Reportman:Clean;ExportImport:Clean;ElectroWikkel:Clean;OSCommerceImport:Clean;Rijschool:Clean;OBAangifte2:Clean;PINCTAP:Clean;SqlBrowserDll:Clean;Conversion_osf1:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="OSFinancials:Make;Openbooks:Make;reports:Make;osFECommerceService:Make;EmailInvoice:Make;EMailDll:Make;Reportman:Make;ExportImport:Make;ElectroWikkel:Make;OSCommerceImport:Make;Rijschool:Make;OBAangifte2:Make;PINCTAP:Make;SqlBrowserDll:Make;Conversion_osf1:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>

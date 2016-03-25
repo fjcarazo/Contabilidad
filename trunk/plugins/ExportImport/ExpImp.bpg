@@ -1,0 +1,30 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = ExportImport.mpt OSCommerceImport.osc DataServerExe.exe \
+  HandyTools.mpt
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+ExportImport.mpt: ExportImport.dpr
+  $(DCC)
+
+OSCommerceImport.osc: ..\OSCommercePlugin\OSCommerceImport.dpr
+  $(DCC)
+
+DataServerExe.exe: DataServer\DataServerExe.dpr
+  $(DCC)
+
+HandyTools.mpt: ..\closedplugins\handyTools\HandyTools.dpr
+  $(DCC)
+
+

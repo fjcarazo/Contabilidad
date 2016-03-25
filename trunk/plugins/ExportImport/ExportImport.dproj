@@ -1,0 +1,151 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{31D61A32-D81C-4D17-954E-A68788B3D02E}</ProjectGuid>
+			<MainSource>ExportImport.dpr</MainSource>
+			<Base>True</Base>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+			<Platform>Win32</Platform>
+			<AppType>Library</AppType>
+			<FrameworkType>VCL</FrameworkType>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+			<ProjectVersion>12.3</ProjectVersion>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_UsePackage>vclimg;vcl;vclx;dbrtl;rtl;vclactnband;vcldb;vcldbx;vcltouch;vclib;IndyCore;IndySystem;IndyProtocols;vclribbon;dxCoreD15;cxLibraryD15;cxPageControlD15;cxEditorsD15;cxExtEditorsD15;cxGridD15;dxmdsD15;unidacvcl150;unidac150;ibprovider150;myprovider150;oraprovider150;rppack_del;rppackvcl_del;osfresource;rppackdesignvcl_del;SingleCompPack</DCC_UsePackage>
+			<DCC_IOChecking>false</DCC_IOChecking>
+			<DCC_DebugInformation>false</DCC_DebugInformation>
+			<DCC_WriteableConstants>true</DCC_WriteableConstants>
+			<DCC_ImageBase>00400000</DCC_ImageBase>
+			<UsePackages>true</UsePackages>
+			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;WinTypes=Windows;WinProcs=Windows;$(DCC_UnitAlias)</DCC_UnitAlias>
+			<DCC_ExeOutput>C:\osFinancials\plug_ins</DCC_ExeOutput>
+			<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+			<DCC_SUSPICIOUS_TYPECAST>false</DCC_SUSPICIOUS_TYPECAST>
+			<DCC_N>true</DCC_N>
+			<DCC_K>false</DCC_K>
+			<GenDll>true</GenDll>
+			<DCC_S>false</DCC_S>
+			<DCC_F>false</DCC_F>
+			<DCC_DcuOutput>..\..\..\..\dcu</DCC_DcuOutput>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_E>false</DCC_E>
+			<DCC_AssertionsAtRuntime>false</DCC_AssertionsAtRuntime>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+			<DCC_ExeOutput>e:\osFinancials\plug_ins</DCC_ExeOutput>
+			<DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="ExportImport.dpr">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="..\..\sources\pluginsShared\UDMTCCoreLink.pas">
+				<Form>DMTCCoreLink</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\..\sources\OSFinancials\Shared\TcashClasses.pas"/>
+			<DCCReference Include="..\..\sources\OSFinancials\Shared\OSFGeneralRoutines.pas"/>
+			<DCCReference Include="..\..\sources\OSFinancials\Shared\UConnectionClass.pas"/>
+			<DCCReference Include="UMainExpImp.pas">
+				<Form>FormMainExpImp</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\sources\pluginsShared\UDMAccountStockDocument.pas">
+				<Form>DMAccountStockDocument</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\..\sources\pluginsShared\janstrings.pas"/>
+			<DCCReference Include="..\..\sources\pluginsShared\janXMLparser2.pas"/>
+			<DCCReference Include="..\..\sources\pluginsShared\janXPathTokenizer.pas"/>
+			<DCCReference Include="..\..\sources\pluginsShared\UCDSLinkRoutines.pas">
+				<Form>DMCDSLinkRoutines</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="UDMHandelRawdata.pas">
+				<Form>DMHandelRawdata</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\..\sources\pluginsShared\osfLookup.pas">
+				<Form>osfLookup</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\sources\OSFinancials\Shared\HtmlHelpAPI.pas"/>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
+		<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj"/>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType>VCLApplication</Borland.ProjectType>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Source>
+						<Source Name="MainSource">ExportImport.dpr</Source>
+					</Source>
+					<Parameters>
+						<Parameters Name="HostApplication">e:\osFinancials\OSFinancials.exe</Parameters>
+					</Parameters>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">True</VersionInfo>
+						<VersionInfo Name="MajorVer">2</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">2</VersionInfo>
+						<VersionInfo Name="Build">64</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">True</VersionInfo>
+						<VersionInfo Name="Locale">1043</VersionInfo>
+						<VersionInfo Name="CodePage">1252</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName">Delphidreams</VersionInfoKeys>
+						<VersionInfoKeys Name="FileDescription">Export import</VersionInfoKeys>
+						<VersionInfoKeys Name="FileVersion">2.0.2.64</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName">Export import</VersionInfoKeys>
+						<VersionInfoKeys Name="LegalCopyright">Delphidreams 2006</VersionInfoKeys>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName">Export import for osFinancials</VersionInfoKeys>
+						<VersionInfoKeys Name="ProductVersion">2.0.2.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments">Export import VTiger and osF self</VersionInfoKeys>
+					</VersionInfoKeys>
+					<Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dcloffice2k150.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dclofficexp150.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+					</Excluded_Packages>
+				</Delphi.Personality>
+				<Platforms>
+					<Platform value="Win32">True</Platform>
+				</Platforms>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>
